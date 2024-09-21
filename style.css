@@ -115,6 +115,11 @@ body {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     min-height: 400px; /* Define uma altura mínima para os cards */
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+.solution-card:hover{
+    transform: translateY(-5px);
 }
 
 .card-icon {
@@ -290,6 +295,17 @@ body {
     background-color: #333;
     color: #fff;
     padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+    text-align: center; /* Centraliza o texto */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza os elementos dentro da .container */
+    justify-content: center;
 }
 
 .footer-title {
@@ -301,6 +317,7 @@ body {
 .social-icons {
     display: flex;
     gap: 10px;
+    justify-content: center; /* Centraliza os ícones sociais */
     margin-bottom: 10px;
 }
 
@@ -331,6 +348,7 @@ body {
     text-decoration: none;
     display: inline-block;
     transition: background-color 0.3s;
+    margin-top: 10px;
 }
 
 .btn-whatsapp:hover {
@@ -340,9 +358,81 @@ body {
 .agency-info {
     font-size: 14px;
     line-height: 1.5;
+    margin-top: 10px;
 }
 
 .footer-bottom {
     font-size: 12px;
     color: #ccc;
+    margin-top: 15px;
 }
+
+/*secao em cima de contato*/
+
+.challenges-section {
+    background: linear-gradient(135deg, #4b4b4b, #c47a7a);
+    padding: 60px 20px;
+}
+
+.section-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff
+}
+
+.challenge-card {
+    background: white;
+    color: #333;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    min-height: 350px; /* Define a altura mínima dos cards */
+    cursor: pointer;
+}
+
+.challenge-card-red {
+    background: #fff
+}
+
+.challenge-card-dark {
+    background: white;
+}
+
+.challenge-icon {
+    font-size: 40px;
+    margin-top: 10px;
+    color: #c47a7a;
+}
+
+.challenge-title {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.challenge-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn-specialist {
+    background-color: #c47a7a;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+    text-decoration: none;
+}
+
+.btn-specialist:hover {
+    background-color: #c47a7a;
+}
+
